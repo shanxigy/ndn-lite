@@ -11,6 +11,8 @@
 #include "../encode/data.h"
 #include "memory-pool.h"
 
+// TODO: Make it a general mem-array.
+
 #define MEMORY_BLOCK_USED 0xFF
 
 typedef struct memory_block

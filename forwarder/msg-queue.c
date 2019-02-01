@@ -10,10 +10,10 @@
 #include <string.h>
 
 typedef struct ndn_msg{
-    void* obj;
-    ndn_msg_callback func;
-    size_t length;
-    uint8_t param[0];
+  void* obj;
+  ndn_msg_callback func;
+  size_t length;
+  uint8_t param[];
 } ndn_msg_t;
 
 static uint8_t msg_queue[NDN_MSGQUEUE_SIZE];
